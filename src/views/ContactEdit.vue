@@ -27,7 +27,8 @@ export default {
                 this.contact = await ContactService.get(id);
             } catch (error) {
                 console.log(error);
-                // Chuyển sang trang NotFound đồng thời giữ cho URL không đổi
+                // Chuyển sang trang NotFound
+                // đồng thời giữ URL không đổi
                 this.$router.push({
                     name: "notfound",
                     params: {
